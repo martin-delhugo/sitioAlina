@@ -1,0 +1,1443 @@
+/* colores - rueda cromatica tonos
+empezando con #77acf1
+naranja : #FF914D
+violeta: #6A2F7D
+negro: #ffffff
+
+color logo: #77acf1
+color titulo section: #B5D921
+verde fondo :#A3AB78
+
+
+
+#FE4F00 naranja
+#0B0300 negro
+#FDE6BD crema
+*/
+
+
+html 
+{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin:0rem 0rem;
+   
+   /*propiedades de fuente */
+    font-size: 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    font-family: 'Nunito', sans-serif;
+    
+
+    /* variables */
+/*--color_fuente:#674C70;*/
+--color_fuente:#0B0300;
+--color_fuente_cabecera:#efefef;
+
+
+--color_fuente_hover: #FE4F00;
+--color_fondo_footer:  #0B0300;
+--color_fondo_nav:#FE4F00;
+--color_borde_nav:#FE4F00;
+--color_tit_section: #FE4F00;
+--color_fondo_section:#ddd;
+
+/* COLORES de Section */
+--color_fondo_menu_phone: #ddd;
+
+/* DIMENSIONES*/
+--alto-section-small: 13rem;
+--alto-section-medium: 15rem;
+--alto-section-large: 20rem;
+}
+*,
+*::before
+*::after
+{
+    box-sizing:inherit
+}
+/* ==================== ESTRUCTURA ==================== */
+
+/* Vamos a usar Mobile-First */
+
+/* =================== NAV ===================*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem;
+
+    background-color: #fff;
+    border-bottom: 1px solid var(--color_fuente);
+    border-top: 1px solid var(--color_fuente);
+
+    /*background-image:linear-gradient(-90deg, #fff,var(--color_fondo_nav));*/
+  
+    position: sticky;
+    top: 0;
+    max-height: auto;
+}
+.nav1{
+    align-items: center;
+
+}
+.nav_menu{
+    display: flex;
+   
+}
+.nav_menu *{
+    padding: 1rem .7rem;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color_fuente);
+
+    font-size: 1.2rem;
+}
+.nav_menu_text_1 *{
+    transition-property: background-color, color,border;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    border: 1px solid #fff;
+
+}
+
+.nav_menu_text_1:hover *{
+    padding: 1rem .7rem;
+
+    text-decoration: none;
+    list-style: none;
+    color: var(--color_fuente_hover);
+
+    background-color: #fff;
+    border: 1px solid var(--color_borde_nav);
+   
+
+}
+.nav_menu_text_2 *{
+    transition-property: background-color, color,border;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    border: 1px solid #fff;
+}
+.nav_menu_text_2:hover *{
+    padding: 1rem .7rem;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color_fuente_hover);
+    
+    background-color: #fff;
+    border: 1px solid var(--color_borde_nav);
+    
+}
+.logo{
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 1px solid var(--color_tit_section);
+   
+   
+    background-image: url(../img/logo_alina_2.png);
+    background-size: cover; 
+
+    transition-property: background-color, color,border;
+    transition-duration: 1500ms;
+    transition-timing-function: ease;
+}
+.logo:hover{
+    border:1px solid var(--color_fondo_section);
+
+   
+
+}
+/*========= cabecera ============*/
+
+.cabecera{
+    height: 18rem;
+    width: 100%;
+   
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url(../img/img3.jpg);
+
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color_fuente_cabecera);
+  
+}
+
+.cabecera-titulo{
+    font-size:2rem;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+
+
+/*======== Secciones =========*/
+.ind-section{
+    margin: 1rem;
+    height: var(--alto-section-small);
+    border: 1px solid var(--color_fondo_section);
+
+    background-image: linear-gradient(
+        rgba(255, 255, 255, .9),
+        rgba(255, 255, 255, .9)),
+        url(../img/plus-circle-dotted.svg);
+    background-size:100% 100%;
+}
+
+.ind-section_2{
+    margin: 1rem;
+    height: var(--alto-section-small);
+    background-color: var(--color_fondo_section);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
+        url(../img/indicaciones.svg);
+    background-size:100% 100%;
+
+}
+.ind-section_2 *,
+.ind-section_4 *{
+    transition-property: background-color, color;
+    transition-duration: 1500ms;
+    transition-timing-function: ease;
+}
+
+
+.ind-section_3{
+    margin: 1rem;
+    height: var(--alto-section-small);
+    border: 1px solid var(--color_fondo_section);
+
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
+        url(../img/contact.svg);
+    background-size:100% 100%;
+}
+
+.ind-section_3 *{
+    transition-property: background-color, color;
+    transition-duration: 1500ms;
+    transition-timing-function:ease;
+}
+.ind-section_4{
+    margin: 1rem;
+    height: var(--alto-section-small);
+    background-color: var(--color_fondo_section);
+
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
+        url(../img/search.svg);
+    background-size:100% 100%;
+}
+
+.ind-sec-div{ 
+    margin: 0;
+    padding:.8rem;    
+}
+
+.ind_section_tit{
+    color: var(--color_tit_section);
+    text-decoration: none;
+    list-style: none; 
+    text-align: center;
+    padding: 0rem;
+    margin-bottom: 0rem;
+}
+
+.ind_section_tit *{
+    text-align: center;
+
+}
+
+.ind_section_tit_none{
+    padding: 0rem;
+    margin-bottom: .5rem;
+}
+
+.ind_tit_indicaciones{
+    padding: 0rem;
+    margin-bottom: .5rem;
+
+}
+
+.ind_tit_indicaciones:hover{
+    color: #fff;
+    background-color: var(--color_fuente_hover);
+}
+
+.indicaciones_redaccion{
+    text-align: justify;
+}
+/* ======== Footer ========== */
+.footer{
+    width:auto;
+    height: 10rem;
+    background-color:var( --color_fondo_footer);
+    position: sticky;
+}
+
+.foot_menu{
+    height: 100%;
+    display:grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(4,25%);
+    justify-items: center;
+    align-items: center;
+    
+}
+.foot_menu .item:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/5;
+
+}
+.foot_menu .item:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+}
+.foot_menu .item:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 3/5;
+
+}
+.foot_menu *{   
+    color: #fff;
+    padding: .5rem;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.titulo_footer{
+   
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+/*===== PAGINA CONTACTO =====*/
+.cont_mapa{
+    margin: .5rem;
+    padding-top: .2rem;
+
+}
+.cont_mapa *{
+    padding: .5rem;
+}
+
+.cont_hor{
+    margin: .5rem;
+    padding: .5rem;
+    padding-top: .2rem;
+
+}
+
+.cont_hor *{
+    padding: .1rem;
+
+}
+
+
+/* ========= PAGINA INDICACIONES ==========*/
+.sec_tit_princ{
+    
+    color: var(--color_tit_section);
+    text-decoration: none;
+    list-style: none;
+}
+.sec_subtit_princ{
+    color: #1e1e1e;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--color_fondo_section);
+
+
+}
+
+.sec-section{
+    margin: 1rem;
+}
+
+.sec_section_tit{
+    color: var(--color_tit_section_ind);
+    text-decoration: none;
+    
+
+}
+.sec-section_2{
+    margin: 1rem;
+    height: 10rem;
+    background-color: var(--color_fondo_section);
+}
+
+.sec_tit_indicaciones:hover{
+    color: #fff;
+    background-color: var(--color_fuente_hover);
+    
+}
+
+/*=================================== PAGINA CONTACTO ====================================*/
+/* Estructura */
+
+.cont_contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.cont_mapa{   
+    margin: 0rem;
+    padding-top: .2rem;
+
+    padding: 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cont_mapa * {
+    margin: 0rem;
+    padding: .5rem;
+}
+.cont_hor{
+    margin: 0rem;
+    padding: 0rem;
+    padding-top: .2rem;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cont_hor * {
+    margin: 0rem;
+    padding: .5rem;
+}
+
+.cont_hor_1{
+    margin: 1rem;
+    background-color: var(--color_fondo_section);
+    width: 80%;
+}
+
+.cont_hor_2{
+    margin: 1rem;
+    width: 80%;
+    border: var(--color_fondo_section) 1px solid;
+}
+
+.cont_hor_3{
+    margin: 1rem;
+    width: 80%;
+    background-color: var(--color_fondo_section);
+}
+
+
+
+/*  contenedor 2    */
+.cont_contenedor_2{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: #7e7e7e 1px solid;
+    padding-top: 3rem;
+}
+
+.cont_contenedor_tit{
+    text-align: center;
+
+}
+
+.cont_contenedor_2_form{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.cont_contenedor_2_form *{
+    margin: .5rem;
+}
+
+.cont_contenedor_2_in_consulta{
+    height: 4rem;
+}
+
+.form-boton{
+    height: 2rem;
+    font-weight: 600;
+    
+    background-color: white;
+    border: #ee803b 1px solid;
+    border-radius: .2rem;
+
+    transition-property: background-color, color;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;   
+}
+
+.form-boton:hover{
+
+    color: white;
+    background-color: var(--color_fondo_nav);
+    border: #ee803b 1px solid;
+    border-radius: .2rem;
+}
+
+.input_form{
+    padding:.2rem;
+
+}
+
+/*  Seccion de Obras Sociales   */
+.obras-sociales {
+    width: 95vw;
+
+
+}
+.obras-sociales-tit{
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--color_fondo_section);
+}
+
+
+.obras-sociales-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,180px);
+    grid-gap: 1rem;
+
+    justify-content: center;
+}
+/* - - - - */
+.obras-sociales-img-1{
+    background-image: url(../img/obras-sociales/ampara.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+}
+
+.obras-sociales-img-2{
+    background-image: url(../img/obras-sociales/amur.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+}
+.obras-sociales-img-3{
+    background-image: url(../img/obras-sociales/apm.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+}
+.obras-sociales-img-4{
+    background-image: url(../img/obras-sociales/apros.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+}
+.obras-sociales-img-5{
+    background-image: url(../img/obras-sociales/asociacoin-eclesiastica.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-6{
+    background-image: url(../img/obras-sociales/avalian.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+}
+.obras-sociales-img-7{
+    background-image: url(../img/obras-sociales/boreal.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+}
+.obras-sociales-img-8{
+    background-image: url(../img/obras-sociales/caja-de-abogados.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+}
+.obras-sociales-img-9{
+    background-image: url(../img/obras-sociales/caja-notarial.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+}
+.obras-sociales-img-10{
+    background-image: url(../img/obras-sociales/cpce.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);    
+    height: 80px;
+
+}
+.obras-sociales-img-11{
+    background-image: url(../img/obras-sociales/daspu.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+
+.obras-sociales-img-12{
+    background-image: url(../img/obras-sociales/docthos.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-13{
+    background-image: url(../img/obras-sociales/ensalud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-14{
+    background-image: url(../img/obras-sociales/federada-salud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-15{
+    background-image: url(../img/obras-sociales/integral.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+
+}
+.obras-sociales-img-16{
+    background-image: url(../img/obras-sociales/iosfa.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-17{
+    background-image: url(../img/obras-sociales/itermedicina.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-18{
+    background-image: url(../img/obras-sociales/jerarquicos-salud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+
+}
+.obras-sociales-img-19{
+    background-image: url(../img/obras-sociales/luis-pasteur.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-20{
+    background-image: url(../img/obras-sociales/mutual-medica.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+
+}
+.obras-sociales-img-21{
+    background-image: url(../img/obras-sociales/opdea.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+
+.obras-sociales-img-22{
+    background-image: url(../img/obras-sociales/osadef.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-23{
+    background-image: url(../img/obras-sociales/oscpyara.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-24{
+    background-image: url(../img/obras-sociales/osdipp.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-25{
+    background-image: url(../img/obras-sociales/osepc.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+
+}
+.obras-sociales-img-26{
+    background-image: url(../img/obras-sociales/osetya.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);   
+    height: 80px;
+
+}
+.obras-sociales-img-27{
+    background-image: url(../img/obras-sociales/ospedyc.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+
+}
+.obras-sociales-img-28{
+    background-image: url(../img/obras-sociales/ospersaams.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+
+}
+.obras-sociales-img-29{
+    background-image: url(../img/obras-sociales/osperyhra.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+
+}
+.obras-sociales-img-30{
+    background-image: url(../img/obras-sociales/ospes.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-31{
+    background-image: url(../img/obras-sociales/ospevic.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+
+.obras-sociales-img-32{
+    background-image: url(../img/obras-sociales/ospf.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-33{
+    background-image: url(../img/obras-sociales/ospil.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-34{
+    background-image: url(../img/obras-sociales/ospim.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-35{
+    background-image: url(../img/obras-sociales/ospjn.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+
+}
+.obras-sociales-img-36{
+    background-image: url(../img/obras-sociales/ospjtap-griff-salud-s.a..png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);    
+    height: 80px;
+
+}
+.obras-sociales-img-37{
+    background-image: url(../img/obras-sociales/ospp.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);   
+    height: 80px;
+
+}
+.obras-sociales-img-38{
+    background-image: url(../img/obras-sociales/ossacra.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);    
+    height: 80px;
+
+}
+.obras-sociales-img-39{
+    background-image: url(../img/obras-sociales/osseg.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);    
+    height: 80px;
+
+}
+.obras-sociales-img-40{
+    background-image: url(../img/obras-sociales/ossoelsac.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-41{
+    background-image: url(../img/obras-sociales/ossurrbAc.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone); 
+    height: 80px;
+
+}
+.obras-sociales-img-42{
+    background-image: url(../img/obras-sociales/pami.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-43{
+    background-image: url(../img/obras-sociales/policia-federal-argentina.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);    
+    height: 80px;
+
+}
+.obras-sociales-img-44{
+    background-image: url(../img/obras-sociales/premedic.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);   
+    height: 80px;
+
+}
+.obras-sociales-img-45{
+    background-image: url(../img/obras-sociales/prevencion-salud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-46{
+    background-image: url(../img/obras-sociales/red-argentina-de-salud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);   
+    height: 80px;
+
+}
+.obras-sociales-img-47{
+    background-image: url(../img/obras-sociales/sadaic.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-48{
+    background-image: url(../img/obras-sociales/sancor-salud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-49{
+    background-image: url(../img/obras-sociales/sanitas-salud.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+.obras-sociales-img-50{
+    background-image: url(../img/obras-sociales/scis-medicina-privada.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);  
+    height: 80px;
+
+}
+
+.obras-sociales-img-51{
+    background-image: url(../img/obras-sociales/serviRED.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+
+.obras-sociales-img-52{
+    background-image: url(../img/obras-sociales/swiss-medical.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-53{
+    background-image: url(../img/obras-sociales/veteranos-de-guerra.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+.obras-sociales-img-54{
+    background-image: url(../img/obras-sociales/william-hope.png);
+    background-size: 100% 100%;
+    border: 1px solid var(--color_fondo_menu_phone);
+    height: 80px;
+
+}
+
+.tit_politica{
+    margin-bottom: .5rem;
+}
+.parr_politica{
+    text-align: center;
+}
+
+/* ###################### MEDIA QUERY (576 - 991)px ################### */
+/*========= cabecera ============*/
+@media screen and (min-width:567px)
+{
+
+.cabecera{
+    height: 30rem;
+    width: 100%;
+
+    background-size: cover;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)),
+          url(../img/img3.jpg);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color_fuente_cabecera);
+   
+}
+
+.cabecera-titulo{
+    font-size:2.5rem;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+
+
+}
+/* ###################### MEDIA QUERY (<768)px ################### */
+/* ###################### MEDIA QUERY (<768)px ################### */
+/* ###################### MEDIA QUERY (<768)px ################### */
+/* ###################### MEDIA QUERY (<768)px ################### */
+/*========= cabecera ============*/
+@media screen and (min-width:768px)
+{
+
+.cabecera{
+    height: 30rem;
+    width: 100%;
+       
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url(../img/img3.jpg);
+    
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color_fuente_cabecera);
+}
+
+.cabecera-titulo-div{
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1));
+
+      width: 100%;
+      height: auto;
+
+}
+
+.cabecera-titulo{
+
+    font-size:3.5rem;
+    font-variant: small-caps;
+    text-decoration: underline;
+
+}
+
+
+/*==================================== Secciones =========================================*/
+.ind-section-module{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem;
+
+}
+
+.ind-section{
+    margin: 1rem;
+    height: var(--alto-section-large);
+    border: 1px solid var(--color_fondo_section);
+
+    transition-property: all;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;   
+}
+.ind-section:hover{   
+    border: 1px solid var(--color_borde_nav);
+    border-radius: 2rem;
+    box-shadow: 2px 4px 10px var(--color_borde_nav);
+
+}
+
+
+.ind-section_2{
+    margin: 1rem;
+    height: var(--alto-section-large);
+    background-color: var(--color_fondo_section);
+    border: var(--color_fondo_section) 1px solid;
+
+    transition-property:all;
+    transition-duration: 1500ms;
+    transition-timing-function: ease; 
+    
+
+}
+.ind-section_2:hover{
+    border: 1px solid var(--color_borde_nav);
+    border-radius: 2rem;
+    background-color: white;       
+    box-shadow: 2px 4px 10px var(--color_borde_nav);
+
+}
+
+
+
+.ind-section_3{
+    margin: 1rem;
+    height: var(--alto-section-large);
+    background-color: var(--color_fondo_section);
+    border: var(--color_fondo_section) 1px solid;
+
+    transition-property:all;
+    transition-duration: 1500ms;
+    transition-timing-function: ease; 
+
+}
+.ind-section_3:hover{
+    border: 1px solid var(--color_borde_nav);
+
+    border-radius: 2rem;
+    background-color: white;       
+    box-shadow: 2px 4px 10px var(--color_borde_nav);
+
+}
+
+
+
+
+.ind-section_4{
+    margin: 1rem;
+    height: var(--alto-section-large);
+    transition-property: border, color,border-radius;
+    transition-duration: 1500ms;
+    transition-timing-function: ease;
+
+    border: 1px solid var(--color_fondo_section);
+    background-color: white;
+}
+
+.ind-section_4:hover{
+    border: 1px solid var(--color_borde_nav);
+
+    border-radius: 2rem;
+    box-shadow: 2px 4px 10px var(--color_borde_nav);
+}
+
+.ind_tit_indicaciones:hover{
+    color: #fff;
+    background-color: var(--color_fuente_hover);
+
+}
+
+.ind_section_tit{
+    padding: 0rem;
+    color: var(--color_tit_section);
+    text-decoration: none;
+    list-style: none;
+}
+
+.ind-sec-div{ 
+    margin: 10%;
+    padding:.8rem;    
+}
+
+
+
+/* ========================================= Footer ================================= */
+.foot_menu .item:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/3;
+
+}
+.foot_menu .item:nth-child(2){
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.foot_menu .item:nth-child(3){
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+
+/* ===================================== INDICACIONES ======================================== */
+.sec_tit_princ{
+    
+    color: var(--color_tit_section);
+    text-decoration: none;
+    list-style: none;
+
+}
+.sec_subtit_princ{
+    color: #1e1e1e;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--color_fondo_section);
+
+
+}
+
+.sec-section{
+    margin: 1rem;
+
+}
+
+.sec_section_tit{
+    color: var(--color_tit_section_ind);
+    text-decoration: none;
+
+}
+.sec-section_2{
+    margin: 1rem;
+    height: 10rem;
+    background-color: var(--color_fondo_section);
+}
+
+.sec_tit_indicaciones:hover{
+    color: #fff;
+    background-color: var(--color_fuente_hover);
+}
+
+/*=================================== PAGINA CONTACTO ====================================*/
+/* Estructura */
+
+.cont_contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.cont_mapa{   
+    margin: 3rem;
+
+    padding: 0rem;
+        border: var(--color_fondo_section) 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cont_mapa * {
+    margin: .2rem;
+  
+}
+.cont_hor{
+    margin: 0rem;
+    padding: 0rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cont_hor * {
+    margin: 0rem;
+    padding: .5rem;
+}
+.cont_hor_1{
+    margin: 1rem;
+    margin-top: 3rem;
+    background-color: var(--color_fondo_section);
+    width: 80%;
+}
+
+.cont_hor_2{
+    margin: 1rem;
+    width: 80%;
+    border: var(--color_fondo_section) 1px solid;
+}
+
+.cont_hor_3{
+    margin: 1rem;
+    width: 80%;
+    background-color: var(--color_fondo_section);
+}
+
+
+
+/*  contenedor 2    */
+.cont_contenedor_2{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-top: #7e7e7e 1px solid;
+    padding-top: 3rem;
+}
+
+.cont_contenedor_tit{
+    text-align: center;
+
+}
+
+.cont_contenedor_2_form{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.cont_contenedor_2_form *{
+    margin: .5rem;
+}
+
+.cont_contenedor_2_in_consulta{
+    height: 4rem;
+}
+
+.form-boton{
+    height: 2rem;
+    font-weight: 600;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+    background-color: white;
+    border: #ee803b 1px solid;
+    border-radius: .2rem;
+
+    transition-property: background-color, color;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;   
+}
+
+.form-boton:hover{
+
+    color: white;
+    background-color: var(--color_fondo_nav);
+    border: #ee803b 1px solid;
+    border-radius: .2rem;
+}
+
+.input_form{
+    padding:.2rem;
+}
+
+.input_form_nom_email{
+    margin-right: 50%;
+}
+
+}
+
+/* ###################### MEDIA QUERY (<992)px ################### */
+/* ###################### MEDIA QUERY (<992)px ################### */
+/* ###################### MEDIA QUERY (<992)px ################### */
+/* ###################### MEDIA QUERY (<992)px ################### */
+/*========= cabecera ============*/
+@media screen and (min-width:992px)
+{
+.cabecera{
+    height: 90vh;
+}
+
+
+/* ================ PAGINA DE CONTACTO ============ */
+.cont_contenedor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ind-section-module{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+    
+}
+
+
+
+
+/* ###################### MEDIA QUERY (<1400)px ################### */
+@media screen and (min-width:1400px)
+{
+
+.ind-section-module{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+}
+}
+
+@media screen and (min-width:1600px)
+{
+
+
+
+.ind-section-module{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+
+/* ###### BOTON HAMBURGUESA NAV #######*/
+}
+
+.button_nav_open,
+.button_nav_close{
+    display: none;
+}
+
+
+@media screen and (max-width:550px){
+    .button_nav_open,
+    .button_nav_close{
+    display: block;
+}
+
+    .button_nav_open{
+        width: 3.5rem;
+        height: 3rem;
+        font-size: 1.5rem;
+
+        background-color: white;
+        color: var(--color_fondo_footer);
+        border: 1px solid var(--color_fuente_cabecera);
+        border-radius: .1rem;
+    }
+
+    .nav1{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 100vh;
+        background-color: var(--color_fondo_menu_phone);
+
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    
+
+    .visible{
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav_menu{
+        flex-direction: column;
+        align-items: center;
+        margin: .5rem;
+        padding: .5rem;
+       
+    }
+
+    .nav_menu:hover{
+        display: none;
+    }
+
+
+
+
+
+    .nav_menu_text_1 *,
+    .nav_menu_text_2 *{
+        border: 1px solid var(--color_fondo_menu_phone);
+    }
+    
+
+
+
+
+    .button_nav_close{
+        height: 2.5rem;
+        width: 8rem;
+        background-color: var(--color_fondo_menu_phone);
+        border: 1px solid var(--color_fondo_footer);
+
+    }
+
+
+
+}
+
+
+
+
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: -10rem;
+    }
+
+.border{
+        border: 1px solid blue;
+    }
+
+
+    .btn-section{
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        border:transparent;
+        padding-bottom: 6rem;
+    }
+    .btn-section-2{
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        border:transparent;
+        padding-bottom: 8rem;
+    }

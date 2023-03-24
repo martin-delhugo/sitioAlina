@@ -1,0 +1,26 @@
+AVISOS LEGALES (https://www.youtube.com/watch?v=0epfwUKgwgs):
+Informacion necesaria para el usuario antes de contratar un producto/servicio nuestro
+	- Identificacion
+	- Condiciones a las cuales el usuario se somete cuando contrata un servicio
+	- Terminos y condiciones de uso
+	- Politica de privacidad
+	- Politica de cookies
+
+Derechos de autor:
+	- Pedir permiso
+	- Citar la fuente de donde saque el material
+
+Comprobante de pago
+	- Mencionar los impuestos
+
+En el caso de estar monetizando en nuestro sitio web debemos contar con un certificado ssl
+	- Es un protocolo de seguridad que permite la encriptacion de los datos de nuestros 
+	  usuarios para que viajes seguros de servidor en servidor
+
+-----
+Avisos legales:
+. quien es la persona que esta detras de la web y cuales osn las normas
+. politica de privacidad de proteccion de datos, que se informe que es lo que pasa con los datos que se recojen
+. cookies
+
+Ley de proteccion de datos.
