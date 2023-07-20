@@ -66,7 +66,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .3rem;
+    padding: .8rem .4rem;
 
     background-color: #fff;
     border-bottom: 1px solid var(--color_fuente);
@@ -156,8 +156,8 @@ header{
     width: 100%;
    
     background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
     url(../img/img3.jpg);
 
     background-size: cover;
@@ -175,7 +175,11 @@ header{
     font-variant: small-caps;
     text-decoration: underline;
 }
-
+.cabecera-titulo-div{
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1));
+}
 
 /*======== Secciones =========*/
 .ind-section{
@@ -254,6 +258,8 @@ header{
 
 .ind_section_tit *{
     text-align: center;
+    color: var(--color_tit_section);
+
 
 }
 
@@ -274,7 +280,8 @@ header{
 }
 
 .ind_tit_indicaciones:hover{
-    color: #fff;
+    color: var(--color_tit_section);
+
    
 }
 
@@ -921,8 +928,8 @@ header{
     background-size: cover;
 
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-         rgba(0, 0, 0, 0.5)),
+        rgba(0, 0, 0, 0.2),
+         rgba(0, 0, 0, 0.2)),
           url(../img/img3.jpg);
     
     display: flex;
@@ -954,8 +961,8 @@ header{
     width: 100%;
        
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
         url(../img/img3.jpg);
     
     background-size: cover;
