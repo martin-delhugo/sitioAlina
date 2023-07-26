@@ -92,6 +92,10 @@ header{
 
     font-size: 1.2rem;
 }
+.nav_boton{
+    background-color: white;
+ 
+}
 .nav_menu_text_1 *{
     transition-property: background-color, color,border;
     transition-duration: 1000ms;
@@ -919,6 +923,7 @@ header{
 @media screen and (min-width:567px)
 {
 
+
 .cabecera{
     height: 30rem;
     width: 100%;
@@ -1390,6 +1395,10 @@ header{
         background-color: var(--color_fondo_menu_phone);
 
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+    .nav_boton{
+        background-color:var(--color_fondo_menu_phone);
+     
     }
 
     
