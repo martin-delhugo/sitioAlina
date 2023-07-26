@@ -5,28 +5,33 @@ const abrir= document.querySelector("#abrir");
 
 
 abrir.addEventListener("click",()=>{
-    nav1.classList.add("visible")
+    nav.classList.add("visible")
 })
 
 cerrar.addEventListener("click",()=>{
-    nav1.classList.remove("visible")
+    nav.classList.remove("visible")
 
 })
 
 function cerr_inicio(){
-    console.log("cerrado")
-    nav1.classList.remove("visible")
+    console.log("cerrado");
+
+    nav.classList.remove("visible")
     location.href = "index.html"
 
 }
 function cerr_indicaciones(){
     console.log("cerrado");
-    nav1.classList.remove("visible")
+
+    nav.classList.remove("visible")
+
     location.href = "indicaciones.html"
 
 }function cerr_contacto(){
     console.log("cerrado")
-    nav1.classList.remove("visible")
+
+    nav.classList.remove("visible")
+
     location.href = "contacto.html"
 
 }
