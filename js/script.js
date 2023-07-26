@@ -13,14 +13,15 @@ cerrar.addEventListener("click",()=>{
 
 /*  Funciones de redireccion de las secciones de inicio */
 function redir_indicaciones(){
-    nav1.classList.remove("visible")
-    location.href = "indicaciones.html"
+    nav1.classList.remove("visible");
+    console.log("CERRADO");
+    location.href = "indicaciones.html";
 }
 function redir_contacto(){
     nav1.classList.remove("visible")
-    location.href = "contacto.html"
+    location.href = "contacto.html";
 }
 function redir_obras_sociales(){
-    nav1.classList.remove("visible")
+    nav1.classList.remove("visible");
     location.href = "indicaciones.html#obras-sociales"
 }
