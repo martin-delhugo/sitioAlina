@@ -2,6 +2,12 @@ const nav= document.querySelector("#nav1");
 const cerrar= document.querySelector("#cerrar");
 const abrir= document.querySelector("#abrir");
 
+const inicio= document.querySelector("#inicio");
+const inidicaciones= document.querySelector("#indicaciones");
+const contacto= document.querySelector("#contacto");
+
+
+
 
 
 abrir.addEventListener("click",()=>{
@@ -13,28 +19,30 @@ cerrar.addEventListener("click",()=>{
 
 })
 
-function cerr_inicio(){
-    console.log("cerrado");
-
-    nav.classList.remove("visible")
+inicio.addEventListener("click",()=>{
+    nav.classList.remove("visible");
     location.href = "index.html"
 
-}
-function cerr_indicaciones(){
-    console.log("cerrado");
 
-    nav.classList.remove("visible")
+})
 
+inidicaciones.addEventListener("click",()=>{
+    nav.classList.remove("visible");
     location.href = "indicaciones.html"
 
-}function cerr_contacto(){
-    console.log("cerrado")
 
-    nav.classList.remove("visible")
+})
 
+contacto.addEventListener("click",()=>{
+    nav.classList.remove("visible");
     location.href = "contacto.html"
 
-}
+
+})
+
+
+
+
 
 /*  Funciones de redireccion de las secciones de inicio */
 function redir_indicaciones(){
