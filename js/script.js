@@ -11,6 +11,11 @@ cerrar.addEventListener("click",()=>{
 
 })
 
+function cerrar(){
+    nav1.classList.remove("visible");
+
+}
+
 /*  Funciones de redireccion de las secciones de inicio */
 function redir_indicaciones(){
     nav1.classList.remove("visible");
