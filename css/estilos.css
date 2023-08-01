@@ -18,6 +18,7 @@ html
 {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    padding: 0rem;
     margin:0rem 0rem;
    
    /*propiedades de fuente */
@@ -76,62 +77,13 @@ header{
   
 
 }
-.nav1{
-    align-items: center;
 
-}
-.nav_menu{
-    display: flex;
-   
-}
-.nav_menu *{
-    padding: 1rem .7rem;
-    text-decoration: none;
-    list-style: none;
-    color: var(--color_fuente);
 
-    font-size: 1.2rem;
-}
-.nav_boton{
-    background-color: white;
- 
-}
-.nav_menu_text_1 *{
-    transition-property: background-color, color,border;
-    transition-duration: 1000ms;
-    transition-timing-function: ease;
-    border: 1px solid #fff;
 
-}
 
-.nav_menu_text_1:hover *{
-    padding: 1rem .7rem;
 
-    text-decoration: none;
-    list-style: none;
-    color: var(--color_fuente_hover);
 
-    background-color: #fff;
-    border: 1px solid var(--color_borde_nav);
-   
 
-}
-.nav_menu_text_2 *{
-    transition-property: background-color, color,border;
-    transition-duration: 1000ms;
-    transition-timing-function: ease;
-    border: 1px solid #fff;
-}
-.nav_menu_text_2:hover *{
-    padding: 1rem .7rem;
-    text-decoration: none;
-    list-style: none;
-    color: var(--color_fuente_hover);
-    
-    background-color: #fff;
-    border: 1px solid var(--color_borde_nav);
-    
-}
 .logo{
     height: 4.5rem;
     width: 4.5rem;
@@ -918,11 +870,122 @@ header{
     text-align: center;
 }
 
+
+
+
+
+    /*CODIGO NAV*/
+    nav{
+        padding: .5rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+    nav ul{
+        position: fixed;
+        top:6rem;
+        left: -100vw;
+        background-color: #1e1e1e;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all .5s ease;
+        
+        
+    }
+
+    
+    nav ul li a{
+        display: block;
+        color: #efefef;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 1.5rem 0rem;
+        border: 1px solid #7e7e7e;
+        
+    }
+
+
+    nav .menu-btn i{
+        font-size: 3rem;
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .nav_item{
+        padding: 0rem;
+        text-align: center;
+        margin: .5rem;
+ 
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+         
+    }
+
+    #click{
+        display: none;
+    }
+
+
+
+
+
+
+
 /* ###################### MEDIA QUERY (576 - 991)px ################### */
 /*========= cabecera ============*/
 @media screen and (min-width:567px)
 {
+    nav ul{
+        position:absolute;
+        display:flex;
+        list-style: none;
+        align-items: center;
+        justify-content: flex-end;
 
+
+        background-color:transparent;
+        top:0rem;
+        left: 0vw;
+        
+        height: 6rem;
+        width: 100%;
+
+
+
+    }
+   
+    nav ul li a{
+        display: block;
+        color:#1e1e1e;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        border: 1px solid transparent;
+        transition: all 1s ease;
+        
+    }
+    nav ul li a:hover{
+        border: 1px solid #ee803b;
+        
+    }
+
+        
+
+
+    nav .menu-btn i{
+        display: none;
+    }
+    
+    #click{
+        display: none;
+    }
+    
 
 .cabecera{
     height: 30rem;
@@ -958,6 +1021,7 @@ header{
 /*========= cabecera ============*/
 @media screen and (min-width:768px)
 {
+    
 
 .cabecera{
     height: 30rem;
@@ -1355,96 +1419,10 @@ header{
 /* ###### BOTON HAMBURGUESA NAV #######*/
 }
 
-.button_nav_open,
-.button_nav_close{
-    display: none;
-}
-
-
-@media screen and (max-width:550px){
-    .button_nav_open,
-    .button_nav_close{
-    display: block;
-}
-
-    .button_nav_open{
-        width: 3.5rem;
-        height: 3rem;
-        font-size: 1.5rem;
-
-        background-color: white;
-        color: var(--color_fondo_footer);
-        border: 1px solid var(--color_fuente_cabecera);
-        border-radius: .1rem;
-    }
-
-    .nav1{
-        opacity: 0;
-        visibility: hidden;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-
-        height: 100vh;
-        background-color: var(--color_fondo_menu_phone);
-
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-    .nav_boton{
-        background-color:var(--color_fondo_menu_phone);
-     
-    }
-
-    
-
-    .visible{
-        opacity: 1;
-        visibility: visible;
-
-    }
-
-    .nav_menu{
-        flex-direction: column;
-        align-items: center;
-        margin: .5rem;
-        padding: .5rem;
-       
-    }
-
-    .nav_menu:hover{
-        display: none;
-    }
 
 
 
 
-
-    .nav_menu_text_1 *,
-    .nav_menu_text_2 *{
-        border: 1px solid var(--color_fondo_menu_phone);
-    }
-    
-
-
-
-
-    .button_nav_close{
-        height: 2.5rem;
-        width: 8rem;
-        background-color: var(--color_fondo_menu_phone);
-        border: 1px solid var(--color_fondo_footer);
-
-    }
-
-
-
-}
 
 
 
@@ -1476,3 +1454,5 @@ footer{
         border:transparent;
         padding-bottom: 8rem;
     }
+
+
